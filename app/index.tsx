@@ -1,16 +1,30 @@
+import { MEDIA, SPLASH_TIME } from '@/constants/constants';
 import { router } from 'expo-router';
-import { View, Text, TouchableOpacity } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { useEffect } from 'react';
+import { ActivityIndicator, Image, ImageBackground, View } from 'react-native';
 
-export default function Home() {
+export default function Index() {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      router.replace('/home');
+    }, SPLASH_TIME);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <Text className="text-4xl font-bold text-blue-500">Home Screen</Text>
-      <TouchableOpacity
-        className="items-center rounded-xl bg-azure-600 py-3"
-        onPress={() => router.push('/demo')}>
-        <Text className="font-semibold text-white">Theme Page</Text>
-      </TouchableOpacity>
-    </SafeAreaView>
+    <ImageBackground
+      source={MEDIA.SPLASH_IMAGE}
+      resizeMode="cover"
+      style={{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}>
+      <View className="flex-1 items-center justify-center">
+        <Image source={MEDIA.LOGO} className="h-24 w-56" resizeMode="contain" />
+        <ActivityIndicator size="large" color="#ffffff" className="mt-6" />
+      </View>
+    </ImageBackground>
   );
 }

@@ -3,18 +3,12 @@
     "name": "pokedex",
     "slug": "pokedex",
     "version": "1.0.0",
-    "scheme": "rnbaseapp",
+    "scheme": "pokedex",
 
     "orientation": "portrait",
     "userInterfaceStyle": "light",
 
     "icon": "./assets/icon.png",
-
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
 
     "assetBundlePatterns": ["**/*"],
 
@@ -24,11 +18,11 @@
 
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.yourname.rnbaseapp"
+      "bundleIdentifier": "com.yourname.pokedex"
     },
 
     "android": {
-      "package": "com.yourname.rnbaseapp",
+      "package": "com.yourname.pokedex",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
