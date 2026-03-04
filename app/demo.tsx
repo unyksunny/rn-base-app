@@ -3,7 +3,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function Demo() {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ flex: 1 }}>
       <ScrollView className="flex-1 bg-neutralBg px-6 pt-14">
         {/* Title */}
         <Text className="mb-8 text-3xl font-semibold text-slate-900">Azure Theme Preview</Text>
