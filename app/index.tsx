@@ -20,6 +20,8 @@ export default function Index() {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        height: '100%',
+        width: '100%',
       }}>
       <View className="flex-1 items-center justify-center">
         <Image source={MEDIA.LOGO} className="h-24 w-56" resizeMode="contain" />
