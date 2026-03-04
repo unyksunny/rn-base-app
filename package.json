@@ -13,8 +13,11 @@
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [
-      "prettier --write",
-      "eslint --fix"
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json}": [
+      "prettier --write"
     ]
   },
   "dependencies": {
@@ -45,6 +48,6 @@
     "typescript": "~5.9.2"
   },
   "main": "node_modules/expo/AppEntry.js",
-  "packageManager": "yarn@4.13.0",
+  "packageManager": "yarn@1.22.19",
   "private": true
 }
