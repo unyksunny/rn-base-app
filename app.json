@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "rn-base-app",
-    "slug": "rn-base-app",
+    "name": "pokedex",
+    "slug": "pokedex",
     "version": "1.0.0",
     "scheme": "rnbaseapp",
 

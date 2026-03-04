@@ -28,7 +28,7 @@ Trace:
 
 npm manifest: 
   {
-    "name": "rn-base-app",
+    "name": "pokedex",
     "version": "1.0.0",
     "scripts": {
       "android": "expo start --android",
